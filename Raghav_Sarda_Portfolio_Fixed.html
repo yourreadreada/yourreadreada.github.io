@@ -1,0 +1,1561 @@
+<!DOCTYPE html>
+<!-- saved from url=(0152)https://ppl-ai-code-interpreter-files.s3.amazonaws.com/web/direct-files/5f5d765448936c405678fd1836ba9ece/49add8e3-ae47-4a94-bd57-cde21f56aa33/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raghav Sarda - Portfolio</title>
+    <style>
+        /* Design System Variables - Vibrant & Colorful */
+        :root {
+            --color-primary: #3B82F6;
+            --color-secondary: #8B5CF6;
+            --color-accent: #06B6D4;
+            --color-background: #fafafa;
+            --color-surface: #ffffff;
+            --color-text-dark: #111827;
+            --color-text-light: #6B7280;
+            --color-border: #e5e7eb;
+            --color-card-bg: #ffffff;
+            --color-navbar-bg: rgba(255, 255, 255, 0.98);
+            
+            /* Vibrant Accent Colors */
+            --color-cyan: #06B6D4;
+            --color-coral: #FF6B6B;
+            --color-lime: #10B981;
+            --color-yellow: #F59E0B;
+            --color-violet: #A78BFA;
+            --color-pink: #EC4899;
+            
+            /* Skill Colors */
+            --color-c: #EF4444;
+            --color-cpp: #F97316;
+            --color-java: #3B82F6;
+            --color-python: #FBBF24;
+            
+            /* Gradients */
+            --gradient-primary: linear-gradient(135deg, #3B82F6 0%, #8B5CF6 100%);
+            --gradient-hero: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+            --gradient-student: linear-gradient(135deg, #3B82F6 0%, #8B5CF6 100%);
+            --gradient-grocery: linear-gradient(135deg, #06B6D4 0%, #10B981 100%);
+            --color-navbar-bg: rgba(255, 255, 255, 0.98);
+            --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+            --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+            --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+            --radius-sm: 0.375rem;
+            --radius-md: 0.5rem;
+            --radius-lg: 0.75rem;
+            --radius-xl: 1rem;
+            --radius-full: 9999px;
+            --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        /* Dark Mode Variables - Vibrant */
+        [data-theme="dark"] {
+            --color-primary: #3B82F6;
+            --color-secondary: #A78BFA;
+            --color-accent: #00D9FF;
+            --color-background: #0F172A;
+            --color-surface: #1e293b;
+            --color-text-dark: #F8FAFC;
+            --color-text-light: #CBD5E1;
+            --color-border: #334155;
+            --color-card-bg: #1e293b;
+            --color-navbar-bg: rgba(15, 23, 42, 0.98);
+            
+            /* Vibrant Dark Accents */
+            --color-cyan: #00D9FF;
+            --color-coral: #FF6B9D;
+            --color-lime: #00FF88;
+            --color-yellow: #FFD700;
+            --color-violet: #A78BFA;
+            --color-pink: #FF1493;
+            
+            /* Gradients */
+            --gradient-primary: linear-gradient(135deg, #3B82F6 0%, #A78BFA 100%);
+            --gradient-hero: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+            --gradient-student: linear-gradient(135deg, #3B82F6 0%, #8B5CF6 100%);
+            --gradient-grocery: linear-gradient(135deg, #06B6D4 0%, #10B981 100%);
+            --color-navbar-bg: rgba(15, 23, 42, 0.98);
+            --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.3);
+            --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.4);
+            --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.4);
+            --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+            line-height: 1.6;
+            color: var(--color-text-dark);
+            background-color: var(--color-background);
+            overflow-x: hidden;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        /* Navigation */
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: var(--color-navbar-bg);
+            backdrop-filter: blur(10px);
+            box-shadow: var(--shadow-sm);
+            z-index: 1000;
+            transition: var(--transition);
+        }
+
+        .navbar.scrolled {
+            box-shadow: var(--shadow-md);
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-logo {
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-image: url('Logo.png');
+    background-size: cover;
+    background-position: center;
+    text-indent: -9999px;
+}
+
+
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        .nav-link {
+            color: var(--color-text-dark);
+            text-decoration: none;
+            font-weight: 500;
+            transition: var(--transition);
+            position: relative;
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--color-primary);
+            transition: var(--transition);
+        }
+
+        .nav-link:hover,
+        .nav-link.active {
+            color: var(--color-primary);
+        }
+
+        .nav-link:hover::after,
+        .nav-link.active::after {
+            width: 100%;
+        }
+
+        /* Theme Toggle Button */
+        .theme-toggle {
+            background: var(--color-surface);
+            border: 1px solid var(--color-border);
+            border-radius: var(--radius-md);
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: var(--transition);
+            font-size: 1.25rem;
+            margin-left: 1rem;
+        }
+
+        .theme-toggle:hover {
+            transform: scale(1.1);
+            box-shadow: var(--shadow-md);
+        }
+
+        .theme-toggle:active {
+            transform: scale(0.95);
+        }
+
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            gap: 4px;
+        }
+
+        .hamburger span {
+            width: 25px;
+            height: 3px;
+            background: var(--color-text-dark);
+            transition: var(--transition);
+            border-radius: 2px;
+        }
+
+        .hamburger.active span:nth-child(1) {
+            transform: rotate(45deg) translate(5px, 5px);
+        }
+
+        .hamburger.active span:nth-child(2) {
+            opacity: 0;
+        }
+
+        .hamburger.active span:nth-child(3) {
+            transform: rotate(-45deg) translate(7px, -6px);
+        }
+
+        /* Hero Section - Vibrant with Background Image */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 6rem 2rem 4rem;
+            background: var(--gradient-hero);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: url('https://user-gen-media-assets.s3.amazonaws.com/seedream_images/4953390b-5149-4f9d-b2dc-dfe3b04cea99.png');
+            background-size: cover;
+            background-position: center;
+            opacity: 0.15;
+            z-index: 0;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="rgba(255,255,255,0.1)" d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,112C672,96,768,96,864,112C960,128,1056,160,1152,160C1248,160,1344,128,1392,112L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>');
+            background-size: cover;
+            background-position: bottom;
+            opacity: 0.5;
+        }
+
+        .hero-content {
+            text-align: center;
+            max-width: 800px;
+            position: relative;
+            z-index: 1;
+            animation: fadeInUp 1s ease-out;
+        }
+
+        .profile-photo {
+            width: 220px;
+            height: 220px;
+            border-radius: var(--radius-full);
+            border: 8px solid white;
+            box-shadow: 0 30px 80px rgba(0, 0, 0, 0.4), 0 0 0 2px rgba(255, 255, 255, 0.6);
+            margin-bottom: 1.5rem;
+            object-fit: cover;
+            margin-left: auto;
+            margin-right: auto;
+            animation: fadeInScale 1s ease-out, profileGlow 3s ease-in-out infinite;
+            position: relative;
+        }
+        
+        @keyframes profileGlow {
+            0%, 100% {
+                box-shadow: 0 30px 80px rgba(0, 0, 0, 0.4), 0 0 0 2px rgba(255, 255, 255, 0.6), 0 0 40px rgba(139, 92, 246, 0.6);
+            }
+            50% {
+                box-shadow: 0 30px 80px rgba(0, 0, 0, 0.4), 0 0 0 2px rgba(255, 255, 255, 0.6), 0 0 60px rgba(59, 130, 246, 0.8);
+            }
+        }
+
+        @keyframes fadeInScale {
+            from {
+                opacity: 0;
+                transform: scale(0.8);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        .signature-badge {
+            display: inline-block;
+            background: linear-gradient(135deg, #00D9FF 0%, #FF1493 50%, #FFD700 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-size: 1.5rem;
+            font-weight: 700;
+            letter-spacing: 0.05em;
+            text-transform: lowercase;
+            margin-bottom: 1rem;
+            padding: 0.5rem 1.5rem;
+            border: 3px solid;
+            border-image: linear-gradient(135deg, #00D9FF 0%, #FF1493 50%, #FFD700 100%) 1;
+            border-radius: var(--radius-lg);
+            animation: signatureGlow 2s ease-in-out infinite;
+            position: relative;
+            background-color: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(10px);
+        }
+        
+        @keyframes signatureGlow {
+            0%, 100% {
+                filter: brightness(1) drop-shadow(0 0 10px rgba(0, 217, 255, 0.5));
+            }
+            50% {
+                filter: brightness(1.2) drop-shadow(0 0 20px rgba(255, 20, 147, 0.6));
+            }
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, #ffffff 0%, #f0f0f0 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 1rem;
+            letter-spacing: -0.02em;
+            text-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .hero .subtitle {
+            font-size: 1.5rem;
+            color: rgba(255, 255, 255, 0.9);
+            margin-bottom: 1rem;
+            font-weight: 500;
+        }
+
+        .hero .tagline {
+            font-size: 1.125rem;
+            color: rgba(255, 255, 255, 0.8);
+            margin-bottom: 2rem;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 0.875rem 2rem;
+            border-radius: var(--radius-lg);
+            font-weight: 600;
+            text-decoration: none;
+            transition: var(--transition);
+            display: inline-block;
+            cursor: pointer;
+            border: 2px solid transparent;
+            font-size: 1rem;
+        }
+
+        .btn-primary {
+            background: white;
+            color: var(--color-primary);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+            background: linear-gradient(135deg, #ffffff 0%, #f0f0f0 100%);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: white;
+            border-color: white;
+        }
+
+        .btn-secondary:hover {
+            background: white;
+            color: var(--color-primary);
+        }
+
+        /* Section Styles - Colorful Backgrounds */
+        .section {
+            padding: 5rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+            position: relative;
+        }
+        
+        .section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 200px;
+            background: linear-gradient(180deg, rgba(59, 130, 246, 0.03) 0%, transparent 100%);
+            pointer-events: none;
+            z-index: -1;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 1rem;
+            background: var(--gradient-primary);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .section-subtitle {
+            text-align: center;
+            color: var(--color-text-light);
+            font-size: 1.125rem;
+            margin-bottom: 3rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* About Section */
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+            position: relative;
+        }
+        
+        .about-content::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 300px;
+            height: 300px;
+            background: radial-gradient(circle, rgba(59, 130, 246, 0.08) 0%, transparent 70%);
+            pointer-events: none;
+            z-index: -1;
+        }
+
+        .about-text {
+            font-size: 1.125rem;
+            line-height: 1.8;
+            color: var(--color-text-light);
+        }
+
+        .about-text p {
+            margin-bottom: 1.5rem;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .skill-category {
+            background: var(--color-surface);
+            padding: 2rem;
+            border-radius: var(--radius-xl);
+            border: 2px solid transparent;
+            background-clip: padding-box;
+            position: relative;
+            transition: var(--transition);
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+        }
+        
+        .skill-category::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            border-radius: var(--radius-xl);
+            padding: 2px;
+            background: var(--gradient-primary);
+            -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+            -webkit-mask-composite: xor;
+            mask-composite: exclude;
+            opacity: 0;
+            transition: var(--transition);
+        }
+
+        .skill-category:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 32px rgba(0, 0, 0, 0.12);
+        }
+        
+        .skill-category:hover::before {
+            opacity: 0.5;
+        }
+
+        .skill-category h3 {
+            font-size: 1.25rem;
+            margin-bottom: 1rem;
+            color: var(--color-primary);
+        }
+
+        .skill-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+
+        .skill-tag {
+            background: var(--color-background);
+            color: var(--color-text-dark);
+            padding: 0.75rem 1.5rem;
+            border-radius: var(--radius-lg);
+            font-size: 1.125rem;
+            border: 2px solid var(--color-border);
+            font-weight: 600;
+            transition: var(--transition);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+        }
+        
+        .skill-tag:hover {
+            transform: translateY(-3px) scale(1.05);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        }
+        
+        /* Colorful Programming Language Badges */
+        .skill-tag:nth-child(1) {
+            background: linear-gradient(135deg, var(--color-c) 0%, #dc2626 100%);
+            color: white;
+            border-color: var(--color-c);
+        }
+        
+        .skill-tag:nth-child(2) {
+            background: linear-gradient(135deg, var(--color-cpp) 0%, #ea580c 100%);
+            color: white;
+            border-color: var(--color-cpp);
+        }
+        
+        .skill-tag:nth-child(3) {
+            background: linear-gradient(135deg, var(--color-java) 0%, #2563eb 100%);
+            color: white;
+            border-color: var(--color-java);
+        }
+        
+        .skill-tag:nth-child(4) {
+            background: linear-gradient(135deg, var(--color-python) 0%, #f59e0b 100%);
+            color: #1f2937;
+            border-color: var(--color-python);
+        }
+
+        /* Projects Section */
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2rem;
+        }
+
+        .project-card {
+            background: var(--color-card-bg);
+            border-radius: var(--radius-xl);
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            transition: var(--transition);
+            border: 2px solid transparent;
+            position: relative;
+        }
+        
+        .project-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: var(--gradient-primary);
+            opacity: 0;
+            transition: var(--transition);
+        }
+
+        .project-card:hover {
+            transform: translateY(-10px) scale(1.02);
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+        }
+        
+        .project-card:hover::before {
+            opacity: 1;
+        }
+
+        .project-image {
+            width: 100%;
+            height: 220px;
+            background: var(--gradient-primary);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 4rem;
+            font-weight: 700;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .project-image::after {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
+            animation: shimmer 3s ease-in-out infinite;
+        }
+        
+        @keyframes shimmer {
+            0%, 100% { transform: translate(-30%, -30%); }
+            50% { transform: translate(30%, 30%); }
+        }
+        
+        .project-card:nth-child(1) .project-image {
+            background: var(--gradient-student);
+        }
+        
+        .project-card:nth-child(2) .project-image {
+            background: var(--gradient-grocery);
+        }
+
+        .project-content {
+            padding: 1.5rem;
+        }
+
+        .project-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 0.75rem;
+            color: var(--color-text-dark);
+        }
+
+        .project-description {
+            color: var(--color-text-light);
+            margin-bottom: 1rem;
+            line-height: 1.6;
+        }
+
+        .project-tech {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .tech-tag {
+            background: linear-gradient(135deg, rgba(59, 130, 246, 0.1) 0%, rgba(139, 92, 246, 0.1) 100%);
+            color: var(--color-primary);
+            padding: 0.375rem 0.875rem;
+            border-radius: var(--radius-full);
+            font-size: 0.875rem;
+            font-weight: 600;
+            border: 1px solid rgba(59, 130, 246, 0.2);
+            transition: var(--transition);
+        }
+        
+        .tech-tag:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(59, 130, 246, 0.2);
+        }
+
+        .project-links {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .project-link {
+            padding: 0.5rem 1.25rem;
+            border-radius: var(--radius-md);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.875rem;
+            transition: var(--transition);
+        }
+
+        .project-link.primary {
+            background: var(--color-primary);
+            color: white;
+        }
+
+        .project-link.primary:hover {
+            background: #1d4ed8;
+        }
+
+        .project-link.secondary {
+            background: var(--color-surface);
+            color: var(--color-text-dark);
+            border: 1px solid var(--color-border);
+        }
+
+        .project-link.secondary:hover {
+            background: var(--color-border);
+        }
+
+        /* Skills Section - Colorful Badges */
+        #skills .section {
+            background: linear-gradient(135deg, rgba(59, 130, 246, 0.03) 0%, rgba(139, 92, 246, 0.03) 100%);
+            border-radius: var(--radius-xl);
+            padding: 4rem 2rem;
+            position: relative;
+        }
+        
+        #skills .section::before {
+            display: none;
+        }
+
+        /* Contact Section */
+        .contact-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: start;
+        }
+
+        .contact-info h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: var(--color-text-dark);
+        }
+
+        .contact-info p {
+            color: var(--color-text-light);
+            margin-bottom: 2rem;
+            line-height: 1.8;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .social-link {
+            width: 48px;
+            height: 48px;
+            border-radius: var(--radius-md);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--color-surface);
+            border: 1px solid var(--color-border);
+            transition: var(--transition);
+            text-decoration: none;
+            color: var(--color-text-dark);
+            font-weight: 600;
+        }
+
+        .social-link:hover {
+            transform: translateY(-3px);
+            box-shadow: var(--shadow-md);
+            background: var(--color-primary);
+            color: white;
+        }
+
+        .contact-form {
+            background: var(--color-surface);
+            padding: 2.5rem;
+            border-radius: var(--radius-xl);
+            border: 2px solid transparent;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .contact-form::before {
+            content: '';
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            right: -2px;
+            bottom: -2px;
+            background: var(--gradient-primary);
+            border-radius: var(--radius-xl);
+            z-index: -1;
+            opacity: 0.1;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+            color: var(--color-text-dark);
+        }
+
+        .form-input,
+        .form-textarea {
+            width: 100%;
+            padding: 0.75rem 1rem;
+            border: 1px solid var(--color-border);
+            border-radius: var(--radius-md);
+            font-family: inherit;
+            font-size: 1rem;
+            transition: var(--transition);
+            background: var(--color-background);
+            color: var(--color-text-dark);
+        }
+
+        .form-input:focus,
+        .form-textarea:focus {
+            outline: none;
+            border-color: var(--color-primary);
+            box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+        }
+
+        .form-textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        .form-button {
+            width: 100%;
+            padding: 1rem;
+            background: var(--gradient-primary);
+            color: white;
+            border: none;
+            border-radius: var(--radius-lg);
+            font-weight: 600;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: var(--transition);
+            box-shadow: 0 4px 16px rgba(59, 130, 246, 0.3);
+        }
+
+        .form-button:hover {
+            transform: translateY(-2px) scale(1.01);
+            box-shadow: 0 8px 24px rgba(59, 130, 246, 0.4);
+        }
+
+        .error-message {
+            color: #dc2626;
+            font-size: 0.875rem;
+            margin-top: 0.25rem;
+            display: none;
+        }
+
+        .error-message.show {
+            display: block;
+        }
+
+        /* Footer */
+        .footer {
+            background: var(--color-text-dark);
+            color: white;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .footer p {
+            margin: 0;
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        /* Code block styles */
+        details {
+            margin: 1rem 0;
+            background: var(--color-surface);
+            padding: 1rem;
+            border-radius: var(--radius-md);
+        }
+
+        summary {
+            cursor: pointer;
+            font-weight: 600;
+            color: var(--color-primary);
+            user-select: none;
+        }
+
+        summary:hover {
+            text-decoration: underline;
+        }
+
+        pre {
+            margin-top: 1rem;
+            padding: 1rem;
+            background: var(--color-background);
+            border-radius: var(--radius-sm);
+            overflow-x: auto;
+            font-size: 0.75rem;
+            line-height: 1.4;
+        }
+
+        code {
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .nav-menu {
+                position: fixed;
+                left: -100%;
+                top: 70px;
+                flex-direction: column;
+                background: var(--color-navbar-bg);
+                width: 100%;
+                text-align: center;
+                transition: var(--transition);
+                box-shadow: var(--shadow-lg);
+                padding: 2rem 0;
+                gap: 0;
+            }
+
+            .nav-menu.active {
+                left: 0;
+            }
+
+            .nav-menu li {
+                padding: 1rem 0;
+            }
+
+            .hamburger {
+                display: flex;
+            }
+
+            .theme-toggle {
+                width: 36px;
+                height: 36px;
+                font-size: 1.1rem;
+                margin-left: 0;
+            }
+
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero .subtitle {
+                font-size: 1.25rem;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+
+            .about-content,
+            .contact-container {
+                grid-template-columns: 1fr;
+            }
+
+            .projects-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+            }
+
+            .btn {
+                width: 100%;
+                text-align: center;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .section {
+                padding: 3rem 1rem;
+            }
+
+            .hero {
+                padding: 5rem 1rem 3rem;
+            }
+
+            .profile-photo {
+                width: 180px;
+                height: 180px;
+                font-size: 3rem;
+            }
+            
+            .signature-badge {
+                font-size: 1.125rem;
+                padding: 0.375rem 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="https://ppl-ai-code-interpreter-files.s3.amazonaws.com/web/direct-files/5f5d765448936c405678fd1836ba9ece/49add8e3-ae47-4a94-bd57-cde21f56aa33/index.html#home" class="nav-logo">Raghav Sarda</a>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="https://ppl-ai-code-interpreter-files.s3.amazonaws.com/web/direct-files/5f5d765448936c405678fd1836ba9ece/49add8e3-ae47-4a94-bd57-cde21f56aa33/index.html#home" class="nav-link active">Home</a></li>
+                <li><a href="https://ppl-ai-code-interpreter-files.s3.amazonaws.com/web/direct-files/5f5d765448936c405678fd1836ba9ece/49add8e3-ae47-4a94-bd57-cde21f56aa33/index.html#about" class="nav-link">About</a></li>
+                <li><a href="https://ppl-ai-code-interpreter-files.s3.amazonaws.com/web/direct-files/5f5d765448936c405678fd1836ba9ece/49add8e3-ae47-4a94-bd57-cde21f56aa33/index.html#projects" class="nav-link">Projects</a></li>
+                <li><a href="https://ppl-ai-code-interpreter-files.s3.amazonaws.com/web/direct-files/5f5d765448936c405678fd1836ba9ece/49add8e3-ae47-4a94-bd57-cde21f56aa33/index.html#skills" class="nav-link">Skills</a></li>
+                <li><a href="https://ppl-ai-code-interpreter-files.s3.amazonaws.com/web/direct-files/5f5d765448936c405678fd1836ba9ece/49add8e3-ae47-4a94-bd57-cde21f56aa33/index.html#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div style="display: flex; align-items: center; gap: 1rem;">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                    <span id="themeIcon">☀️</span>
+                </button>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <img src="data:image/svg+xml,%3Csvg xmlns=&#39;http://www.w3.org/2000/svg&#39; width=&#39;220&#39; height=&#39;220&#39; viewBox=&#39;0 0 220 220&#39;%3E%3Cdefs%3E%3ClinearGradient id=&#39;grad&#39; x1=&#39;0%25&#39; y1=&#39;0%25&#39; x2=&#39;100%25&#39; y2=&#39;100%25&#39;%3E%3Cstop offset=&#39;0%25&#39; style=&#39;stop-color:%232563eb;stop-opacity:1&#39; /%3E%3Cstop offset=&#39;50%25&#39; style=&#39;stop-color:%238b5cf6;stop-opacity:1&#39; /%3E%3Cstop offset=&#39;100%25&#39; style=&#39;stop-color:%2306B6D4;stop-opacity:1&#39; /%3E%3C/linearGradient%3E%3CradialGradient id=&#39;glow&#39; cx=&#39;50%25&#39; cy=&#39;50%25&#39; r=&#39;50%25&#39;%3E%3Cstop offset=&#39;0%25&#39; style=&#39;stop-color:%23ffffff;stop-opacity:0.3&#39; /%3E%3Cstop offset=&#39;100%25&#39; style=&#39;stop-color:%23ffffff;stop-opacity:0&#39; /%3E%3C/radialGradient%3E%3C/defs%3E%3Ccircle cx=&#39;110&#39; cy=&#39;110&#39; r=&#39;110&#39; fill=&#39;url(%23grad)&#39; /%3E%3Ccircle cx=&#39;110&#39; cy=&#39;110&#39; r=&#39;110&#39; fill=&#39;url(%23glow)&#39; /%3E%3Ctext x=&#39;110&#39; y=&#39;110&#39; text-anchor=&#39;middle&#39; dominant-baseline=&#39;central&#39; font-family=&#39;Arial, sans-serif&#39; font-size=&#39;75&#39; font-weight=&#39;bold&#39; fill=&#39;white&#39; style=&#39;text-shadow: 0 4px 8px rgba(0,0,0,0.3)&#39;%3ERS%3C/text%3E%3C/svg%3E" alt="Raghav Sarda Profile Picture" class="profile-photo">
+            <div class="signature-badge">@iamthersforever</div>
+            <h1>Raghav Sarda</h1>
+            <p class="subtitle">AI Enthusiast, Apple Lover | CSE-C2 | Ex AI &amp; ML C1</p>
+            <p class="tagline">Loves Coding &amp; Technology | Building innovative solutions with modern technologies</p>
+            <div class="cta-buttons">
+                <a href="https://ppl-ai-code-interpreter-files.s3.amazonaws.com/web/direct-files/5f5d765448936c405678fd1836ba9ece/49add8e3-ae47-4a94-bd57-cde21f56aa33/index.html#projects" class="btn btn-primary">View Projects</a>
+                <a href="https://ppl-ai-code-interpreter-files.s3.amazonaws.com/web/direct-files/5f5d765448936c405678fd1836ba9ece/49add8e3-ae47-4a94-bd57-cde21f56aa33/index.html#contact" class="btn btn-secondary">Contact Me</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section" id="about">
+        <h2 class="section-title fade-in">About Me</h2>
+        <p class="section-subtitle fade-in">Get to know me better</p>
+        <div class="about-content fade-in">
+            <div class="about-text">
+                <p>
+                    I'm an AI enthusiast and passionate developer currently in CSE-C2 batch at Symbiosis Institute of Technology (SIT), Pune, 
+                    with prior experience in AI &amp; ML specialization (C1 batch). I love coding and exploring emerging technologies, 
+                    particularly in artificial intelligence, machine learning, and software development.
+                </p>
+                <p>
+                    I'm driven to build efficient solutions that solve real-world problems using clean code and thoughtful design. 
+                    My focus lies in creating practical applications that demonstrate strong fundamentals in data structures, 
+                    algorithms, and problem-solving.
+                </p>
+                <p>
+                    With a strong foundation in multiple programming languages including C, C++, Java, and Python, I continuously 
+                    strive to learn and apply new concepts in my projects. I believe in the power of technology to transform ideas 
+                    into impactful solutions.
+                </p>
+            </div>
+            <div class="skills-preview">
+                <div class="skill-category">
+                    <h3>🎯 Focus Areas</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">AI &amp; Machine Learning</span>
+                        <span class="skill-tag">Data Structures</span>
+                        <span class="skill-tag">Python Development</span>
+                        <span class="skill-tag">Problem Solving</span>
+                    </div>
+                </div>
+                <div class="skill-category" style="margin-top: 1.5rem;">
+                    <h3>🎓 Education</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">CSE-C2 @ SIT Pune</span>
+                        <span class="skill-tag">Ex AI &amp; ML C1</span>
+                        <span class="skill-tag">Technology Enthusiast</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section" id="projects">
+        <h2 class="section-title fade-in">Featured Projects</h2>
+        <p class="section-subtitle fade-in">Check out some of my recent work</p>
+        <div class="projects-grid">
+            <div class="project-card fade-in">
+                <div class="project-image">👨‍🎓</div>
+                <div class="project-content">
+                    <h3 class="project-title">Student Management System</h3>
+                    <p class="project-description">
+                        A comprehensive Python-based system to manage student records with efficient data structures. 
+                        The system maintains student information using dictionaries and tuples, allowing users to add records, 
+                        filter students by performance (average marks &gt; 80), and update marks dynamically. Features a user-friendly 
+                        menu-driven interface for easy interaction.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Data Structures</span>
+                        <span class="tech-tag">Dictionary &amp; Tuple</span>
+                        <span class="tech-tag">List Management</span>
+                    </div>
+                    <details>
+                        <summary>View Full Python Code</summary>
+                        <pre><code># Student Record Manager - Complete Implementation
+
+students = {}  # Declaring Empty Dictionary To Store Values
+
+n = int(input("Enter Number Of Students: "))  # Taking Initial Student Record
+
+for i in range(n):  # Loop To Input Initial Student Record
+    print()
+    name = input("Enter Name: ")
+    roll = int(input("Enter Roll Number: "))
+    limit = int(input("Enter Number Of Marks To Be Entered: "))
+
+    marks = []  # Creating Empty List To Store Marks For A Student
+
+    for j in range(limit):  # Loop To Store Marks For A Student
+        inputmark = int(input(f"Enter Mark {j+1}: "))
+        marks.append(inputmark)  # Adding Marks To Marks List
+
+    students[roll] = (name, marks)  # Storing Student Record As Tuple
+
+print("\n All Students:")
+print(students)  # Printing Initial Entered Students
+
+while True:
+    print("\n Welcome To Student Record Manager:")
+    print("1. Add A Student Record")
+    print("2. Display Students With Average Marks Above 80")
+    print("3. Update Marks For A Specific Roll Number")
+    print("4. Exit")
+
+    choice = int(input("\n Enter A Choice: "))  # Taking Choice Input
+
+    if choice == 1:  # Adding Student Record
+        print()
+        name = input("Enter Name: ")
+        roll = int(input("Enter Roll Number: "))
+        limit = int(input("Enter Number Of Marks To Be Entered: "))
+
+        marks = []
+        for j in range(limit):
+            inputmark = int(input(f"Enter Mark {j+1}: "))
+            marks.append(inputmark)
+
+        students[roll] = (name, marks)
+        print(f"Student {name} Added Successfully.")
+
+    elif choice == 2:  # Displaying Students With Average Marks Above 80
+        print("\nStudents With Average Marks Above 80:")
+        found = False  # To Check If Any Student Is Found
+
+        for roll, (name, marks) in students.items():
+            total = 0
+            for mark in marks:  # Loop To Calculate Average
+                total += mark
+            average = total / len(marks)
+
+            if average &gt; 80:  # If Average &gt; 80
+                print(f"{name} (Roll: {roll}) - Average: {average:.2f}")
+                found = True
+        
+        if not found:
+            print("No Students Found With Average Above 80.")
+
+    elif choice == 3:  # Update Marks For A Specific Roll Number
+        roll = int(input("\nEnter Roll Number to update marks: "))
+
+        if roll in students:  # Checking If Roll Number Exists
+            name, marks = students[roll]
+            print(f"Current Marks For {name}: {marks}")
+
+            limit = int(input("Enter Number Of New Marks: "))
+            newmarks = []  # Creating New Marks List
+
+            for j in range(limit):  # Loop To Input New Marks
+                inputmark = int(input(f"Enter Mark {j+1}: "))
+                newmarks.append(inputmark)
+
+            students[roll] = (name, newmarks)  # Updating Dictionary
+            print(f"Marks Updated Successfully For {name}!")
+
+        else:
+            print("Roll Number Not Found.")
+
+    elif choice == 4:  # Exit Program
+        print("Exiting Program.")
+        break  # Exiting While Loop
+
+    else:  # For Invalid Choice
+        print("Invalid Choice.")</code></pre>
+                    </details>
+                    <div class="project-links">
+                        <a href="https://ppl-ai-code-interpreter-files.s3.amazonaws.com/web/direct-files/5f5d765448936c405678fd1836ba9ece/49add8e3-ae47-4a94-bd57-cde21f56aa33/index.html#contact" class="project-link primary">Contact for Demo</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card fade-in">
+                <div class="project-image">🛒</div>
+                <div class="project-content">
+                    <h3 class="project-title">Grocery Billing System</h3>
+                    <p class="project-description">
+                        An interactive Python application for managing grocery store operations. The system maintains stock inventory 
+                        using dictionaries and processes customer purchases with tuple-based bill tracking. It validates stock availability, 
+                        updates inventory in real-time, and generates professional itemized bills with total calculations.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Data Structures</span>
+                        <span class="tech-tag">Inventory Management</span>
+                        <span class="tech-tag">Bill Processing</span>
+                    </div>
+                    <details>
+                        <summary>View Full Python Code</summary>
+                        <pre><code># Grocery Billing System - Complete Implementation
+
+stock = {}  # Declaring Empty Dictionary To Store Available Stock
+billitems = []  # Declaring Empty List To Store Bill Values As Tuples
+
+print(" Welcome to Grocery Billing System:- ")
+n = int(input("Enter Number Of Items To Add To Stock: "))
+
+for i in range(n):  # Loop To Input Initial Stock
+    print(f"\n Stock Item {i+1} : ")
+    itemname = input("Enter Item Name: ").lower()
+    quantity = int(input("Enter Item Quantity: "))
+    unitprice = float(input("Enter Price Per Unit: "))
+    stock[itemname] = {'quantity': quantity, 'unitprice': unitprice}
+
+# Display Initial Stock
+print("\n Initial Stock:")
+for item, info in stock.items():
+    print(f"{item.capitalize()}: {info['quantity']} Units at Rs.{info['unitprice']:.2f} per unit")
+
+# Menu Loop
+while True:
+    print("\n Grocery Billing Menu: ")
+    print("1. Purchase Items")
+    print("2. Show Current Stock")
+    print("3. Print Final Bill")
+    print("4. Exit")
+
+    choice = int(input("\n Enter A Choice: "))  # Taking Choice As Input
+
+    if choice == 1:  # Purchasing Items
+        purchaseitem = int(input("Enter Number Of Items To Purchase: "))
+        for i in range(purchaseitem):
+            print(f"\n Purchase Item {i+1} : ")
+            itemname = input("Enter Item Name: ").lower()
+
+            if itemname not in stock:  # Check if item exists
+                print(f" Item '{itemname}' NOT Available.")
+                continue
+
+            quantity = int(input("Enter Quantity: "))
+            available_qty = stock[itemname]['quantity']
+            unitprice = stock[itemname]['unitprice']
+
+            if available_qty &gt;= quantity:  # Check stock availability
+                billitems.append((itemname, quantity, unitprice))
+                stock[itemname]['quantity'] -= quantity
+                print(f" {itemname.capitalize()} Added To Bill. Remaining: {stock[itemname]['quantity']}")
+            else:
+                print(f" Insufficient Stock! Only {available_qty} Units Available.")
+
+    elif choice == 2:  # Showing Current Stock
+        print("\n Current Stock Levels:")
+        for item, info in stock.items():
+            print(f"{item.capitalize()}: {info['quantity']} Units at Rs.{info['unitprice']:.2f}")
+
+    elif choice == 3:  # Printing Final Bill
+        if not billitems:
+            print("\n No Items Purchased Yet.")
+        else:
+            print("\n" + "=" * 50)
+            print("           FINAL BILL")
+            print("=" * 50)
+            totalbill = 0
+            for itemname, quantity, unitprice in billitems:
+                totalitem = quantity * unitprice
+                totalbill += totalitem
+                print(f"{itemname.capitalize()}: {quantity} x Rs.{unitprice:.2f} = Rs.{totalitem:.2f}")
+            print("-" * 50)
+            print(f"TOTAL AMOUNT: Rs.{totalbill:.2f}")
+            print("=" * 50)
+            print("\nThank You For Shopping!")
+
+    elif choice == 4:  # Exit Program
+        print("Exiting Grocery Billing System.")
+        break
+
+    else:  # Invalid Choice
+        print("Invalid choice.")</code></pre>
+                    </details>
+                    <div class="project-links">
+                        <a href="https://ppl-ai-code-interpreter-files.s3.amazonaws.com/web/direct-files/5f5d765448936c405678fd1836ba9ece/49add8e3-ae47-4a94-bd57-cde21f56aa33/index.html#contact" class="project-link primary">Contact for Demo</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="section">
+            <h2 class="section-title fade-in">Technical Skills</h2>
+            <p class="section-subtitle fade-in">Programming languages I work with</p>
+            <div class="skills-grid fade-in">
+                <div class="skill-category" style="max-width: 600px; margin: 0 auto;">
+                    <h3>💻 Programming Languages</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">C</span>
+                        <span class="skill-tag">C++</span>
+                        <span class="skill-tag">Java</span>
+                        <span class="skill-tag">Python</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section" id="contact">
+        <h2 class="section-title fade-in">Get In Touch</h2>
+        <p class="section-subtitle fade-in">Let's work together on your next project</p>
+        <div class="contact-container fade-in">
+            <div class="contact-info">
+                <h3>Contact Information</h3>
+                <p>
+                    I'm always open to discussing new projects, learning opportunities, or collaborations in AI, ML, 
+                    and software development. Feel free to reach out via email or use the contact form.
+                </p>
+                <h3>Email Me</h3>
+                <p style="margin-top: 0.5rem;">
+                    <a href="mailto:raghav.sarda.btech2025@sitpune.edu.in" style="color: var(--color-primary); font-weight: 600; text-decoration: underline;">
+                        raghav.sarda.btech2025@sitpune.edu.in
+                    </a>
+                </p>
+            </div>
+            <form class="contact-form" id="contactForm">
+                <div class="form-group">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" id="name" class="form-input" placeholder="Your Name" required="">
+                    <span class="error-message" id="nameError">Please enter your name</span>
+                </div>
+                <div class="form-group">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" id="email" class="form-input" placeholder="your.email@example.com" required="">
+                    <span class="error-message" id="emailError">Please enter a valid email</span>
+                </div>
+                <div class="form-group">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea id="message" class="form-textarea" placeholder="Your message..." required=""></textarea>
+                    <span class="error-message" id="messageError">Please enter a message</span>
+                </div>
+                <button type="submit" class="form-button">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>© 2025 Raghav Sarda. Built with passion and code. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Theme Toggle Functionality
+        const themeToggle = document.getElementById('themeToggle');
+        const themeIcon = document.getElementById('themeIcon');
+        const html = document.documentElement;
+
+        // Initialize theme
+        let currentTheme = 'light';
+
+        themeToggle.addEventListener('click', () => {
+            if (currentTheme === 'light') {
+                html.setAttribute('data-theme', 'dark');
+                themeIcon.textContent = '🌙';
+                currentTheme = 'dark';
+            } else {
+                html.removeAttribute('data-theme');
+                themeIcon.textContent = '☀️';
+                currentTheme = 'light';
+            }
+        });
+
+        // Mobile Navigation Toggle
+        const hamburger = document.getElementById('hamburger');
+        const navMenu = document.getElementById('navMenu');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                hamburger.classList.remove('active');
+                navMenu.classList.remove('active');
+            });
+        });
+
+        // Navbar scroll effect
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // Active section highlighting
+        const sections = document.querySelectorAll('section[id]');
+        const navLinks = document.querySelectorAll('.nav-link');
+
+        function highlightNavigation() {
+            let scrollPosition = window.scrollY + 100;
+
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.offsetHeight;
+                const sectionId = section.getAttribute('id');
+
+                if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+                    navLinks.forEach(link => {
+                        link.classList.remove('active');
+                        if (link.getAttribute('href') === `#${sectionId}`) {
+                            link.classList.add('active');
+                        }
+                    });
+                }
+            });
+        }
+
+        window.addEventListener('scroll', highlightNavigation);
+
+        // Fade-in animation on scroll
+        const fadeElements = document.querySelectorAll('.fade-in');
+
+        const fadeObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        });
+
+        fadeElements.forEach(element => {
+            fadeObserver.observe(element);
+        });
+
+        // Form validation
+        const contactForm = document.getElementById('contactForm');
+        const nameInput = document.getElementById('name');
+        const emailInput = document.getElementById('email');
+        const messageInput = document.getElementById('message');
+        const nameError = document.getElementById('nameError');
+        const emailError = document.getElementById('emailError');
+        const messageError = document.getElementById('messageError');
+
+        function validateEmail(email) {
+            const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            return re.test(email);
+        }
+
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            let isValid = true;
+
+            // Reset error messages
+            nameError.classList.remove('show');
+            emailError.classList.remove('show');
+            messageError.classList.remove('show');
+
+            // Validate name
+            if (nameInput.value.trim() === '') {
+                nameError.classList.add('show');
+                isValid = false;
+            }
+
+            // Validate email
+            if (!validateEmail(emailInput.value.trim())) {
+                emailError.classList.add('show');
+                isValid = false;
+            }
+
+            // Validate message
+            if (messageInput.value.trim() === '') {
+                messageError.classList.add('show');
+                isValid = false;
+            }
+
+            if (isValid) {
+                // Show success message
+                alert('Thank you for your message! I\'ll get back to you soon.');
+                contactForm.reset();
+            }
+        });
+
+        // Smooth scroll for all internal links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const href = this.getAttribute('href');
+                if (href !== '#' && document.querySelector(href)) {
+                    e.preventDefault();
+                    const target = document.querySelector(href);
+                    const offsetTop = target.offsetTop - 70;
+                    window.scrollTo({
+                        top: offsetTop,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+
+</body></html>
