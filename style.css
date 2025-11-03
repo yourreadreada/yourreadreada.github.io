@@ -1,0 +1,28 @@
+:root{
+  --bg:#f6f8fb; --card:#ffffff; --accent:#6b21a8; --accent-2:#ff6b6b; --muted:#6b7280;
+  --radius:14px; --max-width:980px; --shadow: 0 8px 24px rgba(20,30,50,0.06);
+}
+*{box-sizing:border-box}
+body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial; margin:0; background:linear-gradient(180deg,#fbfcff, #f6f8fb); color:#111; -webkit-font-smoothing:antialiased}
+.container{max-width:var(--max-width); margin:0 auto; padding:28px}
+.site-header{background:rgba(255,255,255,0.6); backdrop-filter: blur(6px); box-shadow:0 1px 0 rgba(0,0,0,0.04); position:sticky; top:0; z-index:10}
+.site-header .container{display:flex;align-items:center;justify-content:space-between}
+.logo{margin:0;padding:12px 0;font-size:20px; font-weight:600}
+.muted{color:var(--muted); font-weight:400}
+nav a{margin-left:18px;text-decoration:none;color:var(--muted); font-weight:500}
+.hero{padding:48px 0}
+.hero-grid{display:grid;grid-template-columns:1fr 180px;gap:20px;align-items:center}
+.lead{font-size:18px;color:var(--muted);line-height:1.5}
+.accent{color:var(--accent); font-weight:700}
+.avatar-wrap{display:flex;flex-direction:column;align-items:center;gap:8px}
+.btn{display:inline-block;padding:10px 16px;border-radius:10px;background:var(--accent);color:#fff;text-decoration:none;box-shadow:0 6px 18px rgba(107,33,168,0.18)}
+.btn.ghost{background:transparent;color:var(--accent);border:1px solid rgba(107,33,168,0.08)}
+.cta-row{margin-top:12px}
+.small{font-size:13px}
+.about, .projects, .contact{background:var(--card);border-radius:var(--radius);margin:20px 0;padding:20px;box-shadow:var(--shadow)}
+.project-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px}
+.project{padding:16px;border-radius:12px;background:linear-gradient(180deg,#fff,#fbfbff);border:1px solid rgba(10,10,30,0.02)}
+.project h4{margin:0 0 8px 0}
+.muted.small{color:var(--muted)}
+.site-footer{padding:18px 0;text-align:center;color:var(--muted);font-size:14px}
+@media(max-width:720px){.hero-grid{grid-template-columns:1fr;}.container{padding:18px}}
